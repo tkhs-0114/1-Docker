@@ -1,0 +1,18 @@
+services:
+  python:
+    build:
+      context: ./python
+      dockerfile: DockFile
+    volumes:
+      - ./python:/usr/src/app
+    tty: true
+  c:
+    build:
+      context: ./c-lang
+      dockerfile: Dfile
+    volumes:
+      - data:/usr/src/
+    tty: true
+volumes:
+  data:
+    driver: local
