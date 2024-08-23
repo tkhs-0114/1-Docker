@@ -9,7 +9,7 @@ services:
   c:
     build:
       context: ./c-lang
-      dockerfile: Dfile
+      dockerfile: dockerfile
     volumes:
       - data:/usr/src/
     tty: true
