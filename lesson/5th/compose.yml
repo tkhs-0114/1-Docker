@@ -1,0 +1,12 @@
+services:
+  python:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/usr/src/app
+    env_file: ./src/.env
+    ports:
+      - 5000:5000
+    init: true
+    tty: true
