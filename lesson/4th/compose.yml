@@ -6,6 +6,6 @@ services:
     volumes:
       - ./py:/usr/src/app
     ports:
-      - 5000:5000
+      - 8000:5000
     init: true
     tty: true
