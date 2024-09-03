@@ -7,5 +7,4 @@ services:
       - ./py:/usr/src/app
     ports:
       - 8000:5000
-    init: true
     tty: true

@@ -1,0 +1,7 @@
+Dockerfileの基本的な書き方
+FROM
+    DockerHubについて説明
+WORKDIR
+COPY
+RUN
+CMD
