@@ -1,17 +1,19 @@
 services:
   python:
     build:
-      context: ./python
-      dockerfile: DockFile
+      context: ./py
+      dockerfile: Dockerfile
     volumes:
-      - ./python:/usr/src/app
+      - ./py:/usr/src/app
+    init: true
     tty: true
-  c:
+  gcc:
     build:
       context: ./c-lang
-      dockerfile: dockerfile
+      dockerfile: Dock
     volumes:
       - data:/usr/src/
+    init: true
     tty: true
 volumes:
   data:
