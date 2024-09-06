@@ -1,2 +1,2 @@
 FROM python
-RUN apt update && apt install nano
+RUN apt update && apt install -y nano
